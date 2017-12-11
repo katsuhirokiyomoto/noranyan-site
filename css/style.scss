@@ -1,0 +1,506 @@
+@charset "utf-8";
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$basecolor1: #ffffff; /* 白色 */
+$basecolor2: #ffdeef; /* ピンク */
+$subcolor: #ff399c; /* 濃ピンク */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
+    font-size: 62.5%;
+    background-color: $basecolor2;
+    width: 100%;
+}
+
+header{
+  width: 100%;
+  #menu_area{
+    width: 100%;
+    background-color: $subcolor;
+    color: $basecolor1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    background: #ff399c;
+    z-index: 1000;
+    
+    .menu_content{
+      margin-left: 100px;
+      width: 70%;
+    
+    
+      /*
+      align-items: center;
+      */
+    .logo{
+      display: inline-block;
+      font-size: 2rem;
+      margin-right: 20px;
+     
+      p{
+       
+      }
+      /*p ここまで */
+    }
+    /* logo ここまで */
+  
+    .navi{
+      display: inline-block;
+      background-color: $basecolor1;
+      padding: 6px;
+      border-radius: 30px;
+      .pc_navi{
+        display: none;
+      } 
+      /* pc_navi ここまで */
+      .hamburger_menu{
+        
+      }
+      /* hamburger_menu ここまで */
+    }
+    /* navi ここまで */
+    }
+    /* menu_content ここまで */
+    
+    .hamburger_menu_toggle{
+          position: absolute;
+          width: 100%;
+          height: 200px;
+          display: none;
+          z-index: 1050;
+          background-color: $basecolor1;
+          padding-bottom: 10px;
+          li{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 15px; 
+            padding-bottom: 15px;
+            border-top: 1px solid $subcolor;
+            a{
+              color: black;
+              text-decoration: none;
+            }
+            /* a ここまで */
+          }
+          /* li ここまで */
+        }
+        /* hamburger_menu_toggle ここまで */
+  }
+  /* menu_area ここまで */
+  
+  @media(min-width: 550px){
+    #menu_area{
+      .menu_content{
+      
+    .logo{
+      
+      p{
+       
+      }
+      /*p ここまで */
+    }
+    /* logo ここまで */
+  
+    .navi{
+      background-color: $subcolor;
+      
+      .pc_navi{
+        display: block;
+        
+        
+         ul{
+           
+           li{
+             display: inline-block;
+             a{
+               color: $basecolor1;
+             }
+             /* a ここまで */
+           }
+           /* li ここまで */
+         }
+         /* ul ここまで */
+      } 
+      /* pc_navi ここまで */
+      .hamburger_menu{
+        display: none;
+      }
+      /* hamburger_menu ここまで */
+    }
+    /* navi ここまで */
+    }
+    /* menu_content ここまで */
+    
+    }
+    /* menu_area ここまで */
+  }
+  /* @media ここまで */
+  
+   #top_area{
+     width: 100%;
+     .top_picture{
+       width: 100%;
+       img{
+         width: 100%;  
+       }
+       /* img ここまで */
+     }
+     /* top_picture ここまで */
+  }  
+  /* top_area ここまで */
+  
+@media(min-width: 550px){
+  
+  #top_area{
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     .top_picture{
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       img{
+         width: 100%;  
+       }
+       /* img ここまで */
+     }
+     /* top_picture ここまで */
+  }  
+  /* top_area ここまで */
+  
+}
+/* media ここまで */
+  
+}
+/* header ここまで */
+
+main{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+@media(min-width: 550px){
+  width: 80%;
+}
+/* @media ここまで　*/
+  #heal_area{
+    width: 100%;  
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: $basecolor1;  
+    }
+    /* h1 ここまで */
+    
+    .display_area{
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: $basecolor1;
+      
+      .display_box{
+         width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+        h2{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 1rem;
+        } 
+        /* h2 ここまで */
+        .each_display{
+          .main_display{
+          width: 100%;
+          img{
+          width: 100%;
+          }
+        /* img ここまで */
+        }
+        /* main_display ここまで */
+      
+        ul{
+          margin-top: 10px;
+          flex-wrap: wrap;
+          @include display-flex;
+          justify-content:space-between;
+          @include flex-direction(row); 
+          li{
+            width: 31%;
+            margin-bottom: 10px;
+            img{
+             width: 100%;   
+            } 
+            /* img ここまで */
+          }  
+          /* li ここまで */
+        }
+        /* ul ここまで */
+        }
+        /* each_display ここまで */
+        
+      }
+      /* display_box ここまで */
+    }
+    /* display_area ここまで */
+  }
+  /* heal_area ここまで */
+
+@media(min-width: 550px){
+  
+   #heal_area{
+    h1{
+    }
+    /* h1 ここまで */
+    
+    .display_area{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 20px;
+      .display_box{
+        h2{
+        } 
+        /* h2 ここまで */
+        .each_display{
+          width: 100%;
+          .main_display{
+            width: 62%;
+            float: left;
+            img{
+            }
+          /* img ここまで */
+          }
+          /* main_display ここまで */
+      
+          ul{
+            width: 36%;
+            float: right;
+            margin-top: 0px;
+            margin-left: 0px;
+            
+            li{
+              width: 48%;
+              margin-bottom: 5px;
+              img{
+            
+              } 
+              /* img ここまで */
+            }  
+            /* li ここまで */
+          }
+          /* ul ここまで */
+        }
+        /* each_display ここまで */
+      }
+      /* display_box ここまで */
+    }
+    /* display_area ここまで */
+  }
+  /* heal_area ここまで */
+
+}
+/* @media ここまで */
+
+  #dairy_area{
+    width: 100%;
+    margin-top: 10px;
+    h2{
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: $basecolor1;
+      text-align: center;
+    }
+    /* h2 ここまで */
+    .main_dairy_box{
+      .each_dairy_box{
+        width: 100%;
+        background-color: $basecolor1;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        .dairy_content{
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          ul{
+            margin-bottom: 10px;
+           li{
+              width: 100%;
+             img{
+               width: 100%; 
+             }  
+             /* img ここまで */
+           }
+           /* li ここまで */
+          }
+          /* ul ここまで */
+      
+          .dairy_sentence{
+            width: 100%;
+          }
+          /* dairy_sentence ここまで */
+          p{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+          /* p ここまで */
+        }
+        /* dairy_content ここまで */
+      
+      }
+      /* each_dairy_box ここまで */
+    }
+    /* main_dairy_box ここまで */
+  }
+  /* dairy_area ここまで */
+  
+@media(min-width: 550px){
+  
+  #dairy_area{
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+    h2{
+    }
+    /* h2 ここまで */
+    .main_dairy_box{
+      flex-wrap: wrap;
+      @include display-flex;
+      justify-content:space-between;
+       @include flex-direction(row); 
+    .each_dairy_box{
+        width: 48%;
+        background-color: $basecolor1;
+      .dairy_content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        ul{
+        
+         li{
+           
+           img{
+            width: 100%;
+           }  
+           /* img ここまで */
+         }
+         /* li ここまで */
+        }
+        /* ul ここまで */
+      
+        .dairy_sentence{
+        }
+        /* dairy_sentence ここまで */
+        p{
+    
+          }
+          /* p ここまで */
+      }
+      /* dairy_content ここまで */
+      
+    }
+    /* each_dairy_box ここまで */
+   }
+   /* main_dairy_box ここまで */
+  }
+  /* dairy_area ここまで */
+  
+}
+/* @media ここまで */ 
+  
+  #preserve_area{
+    h2{
+      text-align: center;
+      font-size: 1.5rem;
+      color: $basecolor1;
+    } 
+    /* h2 ここまで */
+    
+      .preserve_box{
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: $basecolor1;
+        .preserve_text{
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          
+          .thanks_message{
+            p{
+              font-size: 1rem;
+              line-height: 1.5;
+              
+            } 
+            /* p ここまで */
+        } 
+        /* thanks_message ここまで */
+      
+        .preserve_link{
+          margin-top: 15px;
+          display: block;
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-decoration: none;
+          background: $subcolor;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 4px #627295;
+          border-radius: 3px;
+          
+          
+            p{
+              text-align: center;
+              font-size: 1rem;
+              padding: 0.5em 1em;
+            }
+            /*p ここまで */
+          }
+          /* preserve_link ここまで */
+        .preserve_link:active {/*ボタンを押したとき*/
+          -ms-transform: translateY(4px);
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);/*下に動く*/
+          border-bottom: none;/*線を消す*/
+        }
+        /* preserve_link:active ここまで */
+        
+        
+      }
+      /* preserve_text ここまで */
+    }
+    /* preserve_box ここまで */
+  }
+  /* preserve_area ここまで */
+}
+/* main ここまで */
+
+footer{
+  margin-top: 15px;
+  margin-bottom: 15px;
+ section{
+   text-align: center;
+    font-size: 1rem; 
+    color: $basecolor1;
+ }
+ /* section ここまで */
+}
+/* footer ここまで */
+ 
+
