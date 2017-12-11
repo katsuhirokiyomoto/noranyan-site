@@ -35,24 +35,35 @@ header{
     .menu_content{
       margin-left: 100px;
       width: 70%;
-    
-    
-      /*
       align-items: center;
-      */
     .logo{
       display: inline-block;
-      font-size: 2rem;
-      margin-right: 20px;
-     
-      p{
+      width: 70%;
+      margin-left: 0px;
+      .logo_pc{
+        display: none;
+        img{
        
+        }
+        /*imgここまで */
       }
-      /*p ここまで */
+      /* logo_pc ここまで */
+      
+      .logo_sp{
+        width: 100%;
+        img{
+         width: 100%;
+        }
+        /*imgここまで */
+      }
+      /* logo_sp ここまで */
+      
+      
     }
     /* logo ここまで */
   
     .navi{
+      margin-left: 10px;
       display: inline-block;
       background-color: $basecolor1;
       padding: 6px;
@@ -101,30 +112,54 @@ header{
   
   @media(min-width: 550px){
     #menu_area{
+     
       .menu_content{
-      
+       width: 90%;
+       padding-top: 10px;
+       padding-bottom: 10px;
     .logo{
+      width: 30%;
+    
       
-      p{
-       
+      .logo_pc{
+        width: 100%;
+        img{
+        width: 100%;
+        }
+        /* img ここまで */
       }
-      /*p ここまで */
+      /* logo_pc ここまで */
+      
+      .logo_sp{
+        
+        img{
+        
+        }
+        /* img ここまで */
+      }
+      /* logo_sp ここまで */
+      
     }
     /* logo ここまで */
   
     .navi{
       background-color: $subcolor;
-      
+      width: 55%;
+      margin-left: 85px;
+      margin-right: 0px;
       .pc_navi{
         display: block;
         
         
          ul{
-           
            li{
              display: inline-block;
+             margin-right: 15px;
              a{
+               font-size: 1.1rem;
                color: $basecolor1;
+               text-decoration: none;
+               
              }
              /* a ここまで */
            }
@@ -261,6 +296,7 @@ main{
   
    #heal_area{
     h1{
+      font-size: 2rem;
     }
     /* h1 ここまで */
     
@@ -271,13 +307,15 @@ main{
       padding-bottom: 20px;
       .display_box{
         h2{
+          font-size: 1.5rem;
         } 
         /* h2 ここまで */
         .each_display{
           width: 100%;
           .main_display{
-            width: 62%;
+            width: 59.3%;
             float: left;
+            align-items: center;
             img{
             }
           /* img ここまで */
@@ -285,20 +323,28 @@ main{
           /* main_display ここまで */
       
           ul{
-            width: 36%;
+            width: 38.7%;
             float: right;
             margin-top: 0px;
             margin-left: 0px;
+          
             
             li{
               width: 48%;
-              margin-bottom: 5px;
+              margin-bottom: 10px;
               img{
             
               } 
               /* img ここまで */
             }  
             /* li ここまで */
+          li:last-child{
+	         margin-bottom: 0px;
+          }
+          li:nth-last-child(2){
+	         margin-bottom: 0px;
+          }
+          
           }
           /* ul ここまで */
         }
@@ -348,6 +394,7 @@ main{
       
           .dairy_sentence{
             width: 100%;
+            margin-top: 15px;
           }
           /* dairy_sentence ここまで */
           p{
@@ -374,6 +421,7 @@ main{
    margin-left: auto;
    margin-right: auto;
     h2{
+      font-size: 2rem;
     }
     /* h2 ここまで */
     .main_dairy_box{
@@ -381,6 +429,7 @@ main{
       @include display-flex;
       justify-content:space-between;
        @include flex-direction(row); 
+      
     .each_dairy_box{
         width: 48%;
         background-color: $basecolor1;
@@ -405,7 +454,7 @@ main{
         }
         /* dairy_sentence ここまで */
         p{
-    
+           font-size: 1.5rem;
           }
           /* p ここまで */
       }
@@ -422,9 +471,10 @@ main{
 /* @media ここまで */ 
   
   #preserve_area{
+    width: 100%;
     h2{
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: $basecolor1;
     } 
     /* h2 ここまで */
@@ -464,7 +514,6 @@ main{
           border-bottom: solid 4px #627295;
           border-radius: 3px;
           
-          
             p{
               text-align: center;
               font-size: 1rem;
@@ -488,6 +537,58 @@ main{
     /* preserve_box ここまで */
   }
   /* preserve_area ここまで */
+  
+@media(min-width: 550px){
+  
+  #preserve_area{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      font-size: 2rem;
+    } 
+    /* h2 ここまで */
+    
+      .preserve_box{
+        padding-bottom: 40px;
+        .preserve_text{
+          
+          
+          .thanks_message{
+            p{
+              font-size: 1.5rem;
+              
+            } 
+            /* p ここまで */
+        } 
+        /* thanks_message ここまで */
+      
+        .preserve_link{
+          width: 40%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          
+          p{
+          font-size: 2rem;
+          }
+          }
+          /* preserve_link ここまで */
+        .preserve_link:active {/*ボタンを押したとき*/
+         
+        }
+        /* preserve_link:active ここまで */
+        
+        
+      }
+      /* preserve_text ここまで */
+    }
+    /* preserve_box ここまで */
+  }
+  /* preserve_area ここまで */
+  
+}
+/* @media ここまで */
+
 }
 /* main ここまで */
 
@@ -503,4 +604,17 @@ footer{
 }
 /* footer ここまで */
  
-
+@media(min-width: 550px){
+ 
+footer{
+ section{
+    font-size: 1.5rem; 
+ }
+ /* section ここまで */
+}
+/* footer ここまで */ 
+  
+  
+  
+}
+/* @ media ここまで */

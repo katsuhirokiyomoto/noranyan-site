@@ -33,17 +33,25 @@ header {
     header #menu_area .menu_content {
       margin-left: 100px;
       width: 70%;
-      /*
       align-items: center;
-      */
       /* logo ここまで */
       /* navi ここまで */ }
       header #menu_area .menu_content .logo {
         display: inline-block;
-        font-size: 2rem;
-        margin-right: 20px;
-        /*p ここまで */ }
+        width: 70%;
+        margin-left: 0px;
+        /* logo_pc ここまで */
+        /* logo_sp ここまで */ }
+        header #menu_area .menu_content .logo .logo_pc {
+          display: none;
+          /*imgここまで */ }
+        header #menu_area .menu_content .logo .logo_sp {
+          width: 100%;
+          /*imgここまで */ }
+          header #menu_area .menu_content .logo .logo_sp img {
+            width: 100%; }
       header #menu_area .menu_content .navi {
+        margin-left: 10px;
         display: inline-block;
         background-color: #ffffff;
         padding: 6px;
@@ -80,12 +88,27 @@ header {
       header #menu_area {
         /* menu_content ここまで */ }
         header #menu_area .menu_content {
+          width: 90%;
+          padding-top: 10px;
+          padding-bottom: 10px;
           /* logo ここまで */
           /* navi ここまで */ }
           header #menu_area .menu_content .logo {
-            /*p ここまで */ }
+            width: 30%;
+            /* logo_pc ここまで */
+            /* logo_sp ここまで */ }
+            header #menu_area .menu_content .logo .logo_pc {
+              width: 100%;
+              /* img ここまで */ }
+              header #menu_area .menu_content .logo .logo_pc img {
+                width: 100%; }
+            header #menu_area .menu_content .logo .logo_sp {
+              /* img ここまで */ }
           header #menu_area .menu_content .navi {
             background-color: #ff399c;
+            width: 55%;
+            margin-left: 85px;
+            margin-right: 0px;
             /* pc_navi ここまで */
             /* hamburger_menu ここまで */ }
             header #menu_area .menu_content .navi .pc_navi {
@@ -95,9 +118,12 @@ header {
                 /* li ここまで */ }
                 header #menu_area .menu_content .navi .pc_navi ul li {
                   display: inline-block;
+                  margin-right: 15px;
                   /* a ここまで */ }
                   header #menu_area .menu_content .navi .pc_navi ul li a {
-                    color: #ffffff; }
+                    font-size: 1.1rem;
+                    color: #ffffff;
+                    text-decoration: none; }
             header #menu_area .menu_content .navi .hamburger_menu {
               display: none; } }
   header #top_area {
@@ -135,7 +161,8 @@ main {
   /* @media ここまで */
   /* dairy_area ここまで */
   /* @media ここまで */
-  /* preserve_area ここまで */ }
+  /* preserve_area ここまで */
+  /* @media ここまで */ }
   @media (min-width: 550px) {
     main {
       width: 80%; } }
@@ -192,6 +219,8 @@ main {
       main #heal_area {
         /* h1 ここまで */
         /* display_area ここまで */ }
+        main #heal_area h1 {
+          font-size: 2rem; }
         main #heal_area .display_area {
           width: 90%;
           margin-left: auto;
@@ -201,24 +230,31 @@ main {
           main #heal_area .display_area .display_box {
             /* h2 ここまで */
             /* each_display ここまで */ }
+            main #heal_area .display_area .display_box h2 {
+              font-size: 1.5rem; }
             main #heal_area .display_area .display_box .each_display {
               width: 100%;
               /* main_display ここまで */
               /* ul ここまで */ }
               main #heal_area .display_area .display_box .each_display .main_display {
-                width: 62%;
+                width: 59.3%;
                 float: left;
+                align-items: center;
                 /* img ここまで */ }
               main #heal_area .display_area .display_box .each_display ul {
-                width: 36%;
+                width: 38.7%;
                 float: right;
                 margin-top: 0px;
                 margin-left: 0px;
                 /* li ここまで */ }
                 main #heal_area .display_area .display_box .each_display ul li {
                   width: 48%;
-                  margin-bottom: 5px;
-                  /* img ここまで */ } }
+                  margin-bottom: 10px;
+                  /* img ここまで */ }
+                main #heal_area .display_area .display_box .each_display ul li:last-child {
+                  margin-bottom: 0px; }
+                main #heal_area .display_area .display_box .each_display ul li:nth-last-child(2) {
+                  margin-bottom: 0px; } }
   main #dairy_area {
     width: 100%;
     margin-top: 10px;
@@ -253,7 +289,8 @@ main {
               main #dairy_area .main_dairy_box .each_dairy_box .dairy_content ul li img {
                 width: 100%; }
           main #dairy_area .main_dairy_box .each_dairy_box .dairy_content .dairy_sentence {
-            width: 100%; }
+            width: 100%;
+            margin-top: 15px; }
           main #dairy_area .main_dairy_box .each_dairy_box .dairy_content p {
             padding-top: 10px;
             padding-bottom: 20px;
@@ -268,6 +305,8 @@ main {
         margin-right: auto;
         /* h2 ここまで */
         /* main_dairy_box ここまで */ }
+        main #dairy_area h2 {
+          font-size: 2rem; }
         main #dairy_area .main_dairy_box {
           flex-wrap: wrap;
           display: -webkit-flex;
@@ -292,13 +331,16 @@ main {
                 main #dairy_area .main_dairy_box .each_dairy_box .dairy_content ul li {
                   /* img ここまで */ }
                   main #dairy_area .main_dairy_box .each_dairy_box .dairy_content ul li img {
-                    width: 100%; } }
+                    width: 100%; }
+              main #dairy_area .main_dairy_box .each_dairy_box .dairy_content p {
+                font-size: 1.5rem; } }
   main #preserve_area {
+    width: 100%;
     /* h2 ここまで */
     /* preserve_box ここまで */ }
     main #preserve_area h2 {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #ffffff; }
     main #preserve_area .preserve_box {
       width: 100%;
@@ -346,6 +388,36 @@ main {
           /*下に動く*/
           border-bottom: none;
           /*線を消す*/ }
+  @media (min-width: 550px) {
+    main {
+      /* preserve_area ここまで */ }
+      main #preserve_area {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        /* h2 ここまで */
+        /* preserve_box ここまで */ }
+        main #preserve_area h2 {
+          font-size: 2rem; }
+        main #preserve_area .preserve_box {
+          padding-bottom: 40px;
+          /* preserve_text ここまで */ }
+          main #preserve_area .preserve_box .preserve_text {
+            /* thanks_message ここまで */
+            /* preserve_link ここまで */
+            /* preserve_link:active ここまで */ }
+            main #preserve_area .preserve_box .preserve_text .thanks_message {
+              /* p ここまで */ }
+              main #preserve_area .preserve_box .preserve_text .thanks_message p {
+                font-size: 1.5rem; }
+            main #preserve_area .preserve_box .preserve_text .preserve_link {
+              width: 40%;
+              padding-top: 20px;
+              padding-bottom: 20px; }
+              main #preserve_area .preserve_box .preserve_text .preserve_link p {
+                font-size: 2rem; }
+            main #preserve_area .preserve_box .preserve_text .preserve_link:active {
+              /*ボタンを押したとき*/ } }
 
 /* main ここまで */
 footer {
@@ -358,5 +430,13 @@ footer {
     color: #ffffff; }
 
 /* footer ここまで */
+@media (min-width: 550px) {
+  footer {
+    /* section ここまで */ }
+    footer section {
+      font-size: 1.5rem; }
+
+  /* footer ここまで */ }
+/* @ media ここまで */
 
 /*# sourceMappingURL=style.css.map */
