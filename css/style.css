@@ -343,7 +343,7 @@ main {
     /* preserve_box ここまで */ }
     main #preserve_area h2 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #ffffff; }
     main #preserve_area .preserve_box {
       width: 100%;
