@@ -117,6 +117,7 @@ header{
        width: 90%;
        padding-top: 10px;
        padding-bottom: 10px;
+       align-items: center;
     .logo{
       width: 30%;
     
@@ -149,6 +150,8 @@ header{
       margin-right: 0px;
       .pc_navi{
         display: block;
+        position: relative;
+        bottom: 10px;
         
         
          ul{
@@ -595,12 +598,12 @@ main{
 footer{
   margin-top: 15px;
   margin-bottom: 15px;
- section{
+ p{
    text-align: center;
     font-size: 1rem; 
     color: $basecolor1;
  }
- /* section ここまで */
+ /* p ここまで */
 }
 /* footer ここまで */
  

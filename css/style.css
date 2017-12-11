@@ -91,6 +91,7 @@ header {
           width: 90%;
           padding-top: 10px;
           padding-bottom: 10px;
+          align-items: center;
           /* logo ここまで */
           /* navi ここまで */ }
           header #menu_area .menu_content .logo {
@@ -113,6 +114,8 @@ header {
             /* hamburger_menu ここまで */ }
             header #menu_area .menu_content .navi .pc_navi {
               display: block;
+              position: relative;
+              bottom: 10px;
               /* ul ここまで */ }
               header #menu_area .menu_content .navi .pc_navi ul {
                 /* li ここまで */ }
@@ -423,8 +426,8 @@ main {
 footer {
   margin-top: 15px;
   margin-bottom: 15px;
-  /* section ここまで */ }
-  footer section {
+  /* p ここまで */ }
+  footer p {
     text-align: center;
     font-size: 1rem;
     color: #ffffff; }
